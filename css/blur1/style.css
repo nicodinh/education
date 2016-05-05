@@ -1,0 +1,26 @@
+body {
+	background-color: black;
+	/*background-image: url("back.jpg");*/
+}
+
+#container {
+	position: relative;
+	height: 300px;
+	width: 300px;
+}
+
+#background {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:rgba(255, 26, 26, 0.35);
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+	z-index:-1;
+}
+
+#text {
+	color: white;
+}
