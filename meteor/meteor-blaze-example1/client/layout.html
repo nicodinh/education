@@ -1,0 +1,13 @@
+<template name='publicLayout'>
+  <header><h1>Francis Family</h1></header>
+  <br>
+  <nav> --- <a href='/'>home</a> | <a href='/francis/child/new'>New child</a> | <a href='/francis/childs'>My childs</a>  | {{> loginButtons}} --- </nav>
+  <br>
+  <br>
+  <main>
+    {{>Template.dynamic template=content}}
+  </main>
+  <br>
+  <br>
+  <footer>2016</footer>
+</template>

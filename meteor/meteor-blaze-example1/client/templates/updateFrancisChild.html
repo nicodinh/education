@@ -1,0 +1,11 @@
+<template name='updateFrancisChild'>
+  <div class='container'>
+    {{#if Template.subscriptionsReady}}
+      {{#with getDocument }}
+        {{> quickForm collection='collectionFrancisChilds' doc=this id='updateFrancisChild' type='update' template='bootstrap3-horizontal' label-class='col-sm-3' input-col-class='col-sm-9'}}
+      {{/with}}
+    {{else}}
+      {{> spinner}}
+    {{/if}}
+  </div>
+</template>

@@ -1,0 +1,21 @@
+<template name="listFrancisChilds">
+  <div class='container'>
+    {{#if Template.subscriptionsReady}}
+      {{#each getDocuments}}
+        <p> {{prenom}}: {{age}} ans ({{>isEditable id=_id}})</p>
+  		{{else}}
+  			<h3>Pas de gosses</h3>
+  		{{/each}}
+    {{else}}
+      {{> spinner}}
+    {{/if}}
+  </div>
+</template>
+
+<template name="isEditable">
+  {{#if currentUser }}
+    <a href='/francis/update/child/{{id}}'>edit</a>
+  {{else}}
+    Sign in to edit
+  {{/if}}
+</template>
