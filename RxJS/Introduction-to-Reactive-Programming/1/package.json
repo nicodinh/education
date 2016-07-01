@@ -1,0 +1,15 @@
+{
+  "name": "rxjs-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "rxjs": "^5.0.0-beta.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nicodinh",
+  "license": "ISC"
+}
